@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik+Doodle+Shadow&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Tektur&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(rgba(255, 216, 142, 0.9), rgba(172, 117, 77, 0.92)), url(./image/bg1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.main {
+  margin: 0 auto;
+  margin-top: 100px;
+  width: 500px;
+  max-width: 520px;
+  max-height: 500px;
+  background: linear-gradient(rgba(255, 166, 0, 0.92), rgba(210, 105, 30, 0.92)),
+    url(./image/todo1.jpeg);
+  background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  padding: 50px;
+  overflow: auto;
+  box-shadow: 0px 0px 20px rgb(130, 130, 130);
+
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: crimson;
+  border-radius: 10px;
+}
+
+.success {
+  background-color: transparent;
+  padding: 6px;
+  border-radius: 8px;
+  border: 4px dashed red;
+  text-align: center;
+  font-size: 26px;
+  color: #fff;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 4px red;
+}
+
+.hide {
+  display: none;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-variant: small-caps;
+  font-size: 70px;
+  letter-spacing: 2px;
+  font-family: "Rubik Doodle Shadow", system-ui;
+  color: rgb(120, 0, 0);
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+input {
+  padding: 10px;
+  width: 100%;
+  border: none;
+  outline: none;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  font-family: "Tektur", sans-serif;
+  background-color: #F0F0F0;
+}
+
+#addBtn {
+  cursor: pointer;
+  padding: 10px;
+  border: none;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  font-family: "Tektur", sans-serif;
+  font-weight: bold;
+}
+
+.todo-main-wrap {
+  padding: 5px;
+  margin-top: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.todo-name {
+  font-family: "Tektur", sans-serif;
+  font-size: 22px;
+  color: #fff;
+  text-shadow: 2px 2px 4px red;
+}
+
+.todo-name:hover {
+  text-decoration: underline;
+}
+
+.todoBtn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+#editBtn,
+#deleteBtn {
+  cursor: pointer;
+  border: none;
+  padding: 5px;
+  border-radius: 6px;
+  font-family: "Tektur", sans-serif;
+  font-size: 16px;
+  transition: 200ms ease;
+}
+
+#clear {
+  width: 100%;
+  margin-top: 30px;
+  cursor: pointer;
+  border: none;
+  padding: 5px;
+  border-radius: 6px;
+  font-family: "Tektur", sans-serif;
+  font-size: 16px;
+  transition: 200ms ease;
+}
+
+#editBtn:hover,
+#clear:hover,
+#deleteBtn:hover {
+  transform: scale(1.1);
+  background-color: transparent;
+  box-shadow: 0px 0px 8px 2px white;
+  color: #fff;
+}
